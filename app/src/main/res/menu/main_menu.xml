@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Business" android:id="@+id/business"></item>
+    <item android:title="Entertainments" android:id="@+id/entertainment"></item>
+    <item android:title="Health" android:id="@+id/health"></item>
+    <item android:title="Science" android:id="@+id/science"></item>
+    <item android:title="Sport" android:id="@+id/sport"></item>
+    <item android:title="Technology" android:id="@+id/technology"></item>
+    <item android:title="Refresh Feeds" android:id="@+id/refresh"></item>
+
+</menu>
