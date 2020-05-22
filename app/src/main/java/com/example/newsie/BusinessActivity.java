@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -82,6 +83,12 @@ public class BusinessActivity extends AppCompatActivity {
 
         });
 
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("aj", "onStart: ");
+        refreshfun();
     }
 
 

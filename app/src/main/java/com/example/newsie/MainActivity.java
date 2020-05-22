@@ -100,9 +100,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-
-
     }
  public void refreshFeedFunction()
  { mainActivitityViewModel = new ViewModelProvider(this).get(MainActivitityViewModel.class);
@@ -120,5 +117,12 @@ public class MainActivity extends AppCompatActivity {
 
 
  }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("aj", "onStart: ");
+        refreshFeedFunction();
+    }
+
 }
 
