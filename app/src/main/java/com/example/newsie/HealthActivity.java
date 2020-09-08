@@ -31,6 +31,7 @@ public class HealthActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onOptionsItemSelected(item);

@@ -58,15 +58,15 @@ public class BusinessActivity extends AppCompatActivity {
 
         buisnessActivityViewModel.getbuisnessNEWS().observe(this, new Observer<List<News>>() {
 
-            @Override
-            public void onChanged(List<News> news) {
-                buisnessnewsDataAdapter = new NewsDataAdapter(BusinessActivity.this,news);
-                lv.setAdapter(buisnessnewsDataAdapter);
-                Dialog.dismiss();
-            }
+        @Override
+        public void onChanged(List<News> news) {
+            buisnessnewsDataAdapter = new NewsDataAdapter(BusinessActivity.this,news);
+            lv.setAdapter(buisnessnewsDataAdapter);
+            Dialog.dismiss();
+        }
 
-        });
-    }
+    });
+}
     public void refreshfun()
     { lv = (ListView) findViewById(R.id.list_view);
 

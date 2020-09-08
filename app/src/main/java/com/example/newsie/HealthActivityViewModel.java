@@ -148,7 +148,8 @@ public class HealthActivityViewModel extends ViewModel {
                 String title = currentStatesResponse.getString("title");
                 String description = currentStatesResponse.getString("description");
                 String imgurl = currentStatesResponse.getString("urlToImage");
-                News news = new News(imgurl,title,description);
+                String articleurl = currentStatesResponse.getString("url");
+                News news = new News(imgurl,title,description,articleurl);
                 list.add(news);
 
 

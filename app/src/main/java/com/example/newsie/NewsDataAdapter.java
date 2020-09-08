@@ -23,7 +23,6 @@ public class NewsDataAdapter extends ArrayAdapter<News> {
 
 
 
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View lisIemView = convertView;

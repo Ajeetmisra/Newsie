@@ -6,30 +6,40 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:networkSecurityConfig="@xml/networ"
-        android:usesCleartextTraffic="true"
-        android:testOnly="false"
-        android:debuggable="true"
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/networ"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:testOnly="false"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true"
         tools:ignore="HardcodedDebugMode">
-        <activity android:name=".TechnologyActivity"
-            android:label="Technology"></activity>
-        <activity android:name=".SportActivity"
-            android:label="Sport"/>
-        <activity android:name=".ScienceActivity"
-            android:label="Science"/>
-        <activity android:name=".HealthActivity"
-            android:label="Health"/>
-        <activity android:name=".EntertainmentActivity"
-            android:label="Entertainment"/>
-        <activity android:name=".BusinessActivity"
-            android:label="Business"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/SplashTheme"
+            ></activity>
+<!--        <activity-->
+<!--            android:name=".TechnologyActivity"-->
+<!--            android:label="Technology" />-->
+<!--        <activity-->
+<!--            android:name=".SportActivity"-->
+<!--            android:label="Sport" />-->
+<!--        <activity-->
+<!--            android:name=".ScienceActivity"-->
+<!--            android:label="Science" />-->
+<!--        <activity-->
+<!--            android:name=".HealthActivity"-->
+<!--            android:label="Health" />-->
+<!--        <activity-->
+<!--            android:name=".EntertainmentActivity"-->
+<!--            android:label="Entertainment" />-->
+<!--        <activity-->
+<!--            android:name=".BusinessActivity"-->
+<!--            android:label="Business" />-->
+        <activity android:name=".Main2Activity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
